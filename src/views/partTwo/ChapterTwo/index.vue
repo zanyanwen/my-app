@@ -22,7 +22,7 @@
     </div>
 
     <div class="contentBox">
-      <div class="title">二、按建筑高度分类</div>
+      <div class="title">二 、按建筑高度分类</div>
       <div class="content">
         <div>
           1、单多层
