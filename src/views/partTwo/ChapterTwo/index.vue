@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h2>第er章：建筑分类</h2>
+      <h2>第二章：建筑分类</h2>
     </div>
     <div>
       <h3>按使用性质分类</h3>
