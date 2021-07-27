@@ -1,37 +1,61 @@
-import {
-    createRouter,
-    createWebHistory
-} from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
+import Home from "../views/Home.vue";
 
-const routes = [{
+const routes = [
+  {
     path: "/",
     name: "Home",
-    component: () => import("@/views/Home.vue"),
-},
-{
+    component: Home,
+  },
+  {
+    path: "/partOne",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/partOne/index.vue"),
+      children:[
+        {
+          path:"one",
+          component:()=> import(/* webpackChunkName: "about" */ "../views/partOne/index.vue"),
+        }
+      ]
+  },
+  {
     path: "/partTwo",
-    component: () => import("@/views/partTwo/index.vue"),
-    children: [
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/partTwo/index.vue"),
+      children:[
         {
-            path: 'one',
-            component: import("@/views/partTwo/Chapter1.vue"),
+          path:"one",
+          component:()=> import(/* webpackChunkName: "about" */ "../views/partTwo/Chapter1.vue"),
         }
-    ]
-
-},
-{
+      ]
+  },
+  {
     path: "/partThree",
-    component: () => import("@/views/partThree/index.vue"),
-    children: [
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/partThree/index.vue"),
+      children:[
         {
-            path: 'one',
-            component: import("@/views/partThree/ChapterOne.vue"),
+          path:"one",
+          component:()=> import(/* webpackChunkName: "about" */ "../views/partThree/Chapter1.vue"),
         }
-    ]
-},
+      ]
+  },
+  {
+    path: "/partFour",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/partFour/index.vue"),
+      children:[
+        {
+          path:"one",
+          component:()=> import(/* webpackChunkName: "about" */ "../views/partOne/index.vue"),
+        }
+      ]
+  },
 ];
 
-export default createRouter({
-    history: createWebHistory(),
-    routes,
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes,
 });
+
+export default router;

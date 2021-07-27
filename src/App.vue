@@ -1,15 +1,8 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+  <router-view />
 </template>
 
-<script setup>
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
-</script>
-
-<style>
+<style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,8 +15,5 @@ body {
   background: #f4f4f4;
   height: 100%;
   margin: 0;
-}
-html {
-  height: 100%;
 }
 </style>

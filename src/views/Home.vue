@@ -11,35 +11,36 @@
       <Router-link to="/partTwo/one">第一章：建筑分类</Router-link>
     </div>
 
-    
     <div class="card">
       <div class="title">第三部分</div>
-      <Router-link to="/">第一章：概述</Router-link><br>
-      <Router-link to="/partThree/one">第二章：消防给水和消火栓系统</Router-link>
+      <Router-link to="/partThree/one">第一章：概述</Router-link><br />
+      <Router-link to="/partThree/one"
+        >第二章：消防给水和消火栓系统</Router-link
+      >
     </div>
   </div>
 </template>
 
-<script setup>
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+<script>
+export default {
+  name: "Home",
+};
 </script>
 
 <style lang="less" scope>
-  h3{
-    text-align: center;
-    line-height: 40px;
+h3 {
+  text-align: center;
+}
+.card {
+  background: #fff;
+  border-radius: 6px;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  .title {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
   }
-  .card{
-    background: #fff;
-    border-radius: 6px;
-    margin:0 10px 10px 10px;
-    padding: 10px;
-    .title{
-      color: #333;
-      font-size: 16px;
-      font-weight: 400;
-      margin-bottom: 10px;
-    }
-  }
+}
 </style>
