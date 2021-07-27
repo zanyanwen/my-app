@@ -3,6 +3,10 @@
       <div class="chapterTitle">
         第一章:概述
       </div>
+      <div class="card">
+        一、建筑消防设施安装、检查与维护管理
+        <img src="../../assets/img31.jpg" alt="">
+      </div>
   </div>
 </template>
 
@@ -19,9 +23,11 @@ export default defineComponent({
 
 <style lang="less">
 .container{
-  padding: 10px;
   .chapterTitle{
     text-align: center;
+  }
+  img{
+    width: 100%;
   }
 }
 </style>

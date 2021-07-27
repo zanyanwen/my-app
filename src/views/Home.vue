@@ -3,7 +3,7 @@
     <h3>人人学消防</h3>
     <div class="card">
       <div class="title">第一部分</div>
-      <Router-link to="/">第一章：</Router-link>
+      <Router-link to="/">第一章：基础知识</Router-link>
     </div>
 
     <div class="card">
@@ -14,9 +14,7 @@
     <div class="card">
       <div class="title">第三部分</div>
       <Router-link to="/partThree/one">第一章：概述</Router-link><br />
-      <Router-link to="/partThree/one"
-        >第二章：消防给水和消火栓系统</Router-link
-      >
+      <Router-link to="/partThree/two">第二章：消防给水和消火栓系统</Router-link>
     </div>
   </div>
 </template>
