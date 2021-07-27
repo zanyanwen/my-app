@@ -15,5 +15,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: #f4f4f4;
+  height: 100%;
+  margin: 0;
+}
+html {
+  height: 100%;
 }
 </style>

@@ -1,23 +1,22 @@
 <template>
   <div>
-      button
-    <div>
-      <a-button type="primary">Primary</a-button>
-      <a-button>Default</a-button>
-      <a-button type="dashed">Dashed</a-button>
-      <a-button type="danger">Danger</a-button>
-      <a-config-provider :auto-insert-space-in-button="false">
-        <a-button type="primary">按钮</a-button>
-      </a-config-provider>
-      <a-button type="primary">按钮</a-button>
-      <a-button type="link">Link</a-button>
-    </div>
-        icon
-    <div>
-      <a-icon type="step-forward" />
+    <h3>人人学消防</h3>
+    <div class="card">
+      <div class="title">第一部分</div>
+      <Router-link to="/">第一章：</Router-link>
     </div>
 
+    <div class="card">
+      <div class="title">第二部分</div>
+      <Router-link to="/partTwo/one">第一章：建筑分类</Router-link>
+    </div>
 
+    
+    <div class="card">
+      <div class="title">第三部分</div>
+      <Router-link to="/">第一章：概述</Router-link><br>
+      <Router-link to="/partThree/one">第二章：消防给水和消火栓系统</Router-link>
+    </div>
   </div>
 </template>
 
@@ -26,5 +25,21 @@
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
 
-<style>
+<style lang="less" scope>
+  h3{
+    text-align: center;
+    line-height: 40px;
+  }
+  .card{
+    background: #fff;
+    border-radius: 6px;
+    margin:0 10px 10px 10px;
+    padding: 10px;
+    .title{
+      color: #333;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
 </style>
